@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .header-actions{display:flex;align-items:center;gap:10px}.language-toggle{background:transparent;color:#c8d1dc;border:1px solid var(--line);padding:8px 11px;font:600 11px Inter,sans-serif;letter-spacing:.12em;cursor:pointer}.language-toggle:hover{border-color:var(--gold);color:white}.language-toggle .active-language{color:var(--gold)}
+    .contact-links>a.contact-action{display:flex;align-items:center;gap:14px;padding:18px 4px}.contact-action .contact-icon{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(7,17,31,.42);border-radius:50%;font-size:18px;letter-spacing:0}.contact-action .whatsapp-icon{background:#173c2a;color:white;border-color:#173c2a}.contact-action .contact-arrow{margin-left:auto;font-size:18px;letter-spacing:0}.contact-action strong{font-size:17px}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -17,7 +21,10 @@
       <span class="brand-mark">B</span>
       <span><strong>BODE</strong><small>Security Group</small></span>
     </a>
-    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    <div class="header-actions">
+      <button class="language-toggle" type="button" aria-label="Cambiar idioma a inglés"><span class="active-language">ES</span><span aria-hidden="true"> / </span><span>EN</span></button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    </div>
     <nav class="nav" aria-label="Navegación principal">
       <a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#metodologia">Metodología</a><a href="#contacto">Contacto</a>
     </nav>
@@ -86,9 +93,9 @@
         <p>Conversemos sobre contexto, exposición y prioridades para preparar una propuesta técnica y económica ajustada a su operación.</p>
       </div>
       <div class="contact-links">
-        <a href="mailto:bodewill@gmail.com"><span>Correo</span><strong>bodewill@gmail.com</strong></a>
-        <a href="https://wa.me/971501631968" target="_blank" rel="noopener"><span>WhatsApp Emiratos Árabes Unidos</span><strong>+971 50 163 1968</strong></a>
-        <a href="https://wa.me/573214564236" target="_blank" rel="noopener"><span>WhatsApp Colombia</span><strong>+57 321 456 4236</strong></a>
+        <a class="contact-action" href="mailto:bodewill@gmail.com" aria-label="Enviar correo a BODE Security Group"><span class="contact-icon" aria-hidden="true">✉</span><strong>Enviar correo</strong><span class="contact-arrow" aria-hidden="true">↗</span></a>
+        <a class="contact-action" href="https://wa.me/971501631968" target="_blank" rel="noopener" aria-label="Contactar BODE por WhatsApp en Emiratos Árabes Unidos"><span class="contact-icon whatsapp-icon" aria-hidden="true">◉</span><strong>WhatsApp Emiratos Árabes Unidos</strong><span class="contact-arrow" aria-hidden="true">↗</span></a>
+        <a class="contact-action" href="https://wa.me/573214564236" target="_blank" rel="noopener" aria-label="Contactar BODE por WhatsApp en Colombia"><span class="contact-icon whatsapp-icon" aria-hidden="true">◉</span><strong>WhatsApp Colombia</strong><span class="contact-arrow" aria-hidden="true">↗</span></a>
         <div class="phone-row"><a href="tel:+971501631968">Llamar EAU</a><a href="tel:+573214564236">Llamar Colombia</a></div>
       </div>
     </section>
