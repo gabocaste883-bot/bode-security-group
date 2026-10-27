@@ -13,6 +13,7 @@
   <style>
     .header-actions{display:flex;align-items:center;gap:10px}.language-toggle{background:transparent;color:#c8d1dc;border:1px solid var(--line);padding:8px 11px;font:600 11px Inter,sans-serif;letter-spacing:.12em;cursor:pointer}.language-toggle:hover{border-color:var(--gold);color:white}.language-toggle .active-language{color:var(--gold)}
     .contact-links>a.contact-action{display:flex;align-items:center;gap:14px;padding:18px 4px}.contact-action .contact-icon{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(7,17,31,.42);border-radius:50%;font-size:18px;letter-spacing:0}.contact-action .whatsapp-icon{background:#173c2a;color:white;border-color:#173c2a}.contact-action .contact-arrow{margin-left:auto;font-size:18px;letter-spacing:0}.contact-action strong{font-size:17px}
+    .visual-stories{background:#07111f}.visual-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px}.visual-card{position:relative;min-height:360px;margin:0;overflow:hidden;background:#102338}.visual-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}.visual-card:hover img{transform:scale(1.025)}.visual-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(0deg,rgba(5,11,19,.94),transparent)}.visual-card figcaption{position:absolute;z-index:2;left:24px;right:24px;bottom:22px}.visual-card strong{display:block;font-family:"Playfair Display",serif;font-size:24px}.visual-card span{display:block;margin-top:6px;color:#cad3dd;font-size:12px}.visual-note{margin:20px 0 0;color:#8998aa;font-size:12px}@media(max-width:900px){.visual-grid{grid-template-columns:1fr}.visual-card{min-height:320px}}
   </style>
 </head>
 <body>
@@ -68,6 +69,16 @@
         <article class="service"><span>07</span><h3>Seguridad corporativa</h3><p>Evaluación de exposición de ejecutivos, visitantes y operaciones sensibles, con procedimientos y seguimiento.</p><small>Por proyecto o mes</small></article>
         <article class="service"><span>08</span><h3>Asesoría de riesgos</h3><p>Diagnóstico y priorización de vulnerabilidades, medidas de mitigación y hoja de ruta de mejora.</p><small>Por proyecto o mes</small></article>
       </div>
+    </section>
+
+    <section class="visual-stories section" aria-labelledby="visual-title">
+      <div class="section-heading"><p class="eyebrow">Escenarios de servicio</p><h2 id="visual-title">Preparación para entornos exigentes</h2></div>
+      <div class="visual-grid">
+        <figure class="visual-card"><img src="executive-assessment.png" alt="Escena conceptual de una evaluación ejecutiva" loading="lazy"><figcaption><strong>Evaluación ejecutiva</strong><span>Análisis, contexto y decisiones informadas.</span></figcaption></figure>
+        <figure class="visual-card"><img src="secure-mobility.jpg" alt="Escena conceptual de movilidad segura" loading="lazy"><figcaption><strong>Movilidad coordinada</strong><span>Rutas, recursos y contingencias.</span></figcaption></figure>
+        <figure class="visual-card"><img src="risk-environments.png" alt="Escenas conceptuales de entornos operativos" loading="lazy"><figcaption><strong>Entornos complejos</strong><span>Comprensión del contexto y la exposición.</span></figcaption></figure>
+      </div>
+      <p class="visual-note">Imágenes conceptuales de referencia. No acreditan personal, vehículos, instalaciones, clientes ni operaciones propias de BODE Security Group.</p>
     </section>
 
     <section class="method section" id="metodologia">
